@@ -1,28 +1,26 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <a class="navbar-brand" href="#">
-    BIKE L4ZER
-</a>
+<div id="nav" class="navbar navbar-expand-sm navbar-light navbar-lewagon ">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        Home
-      </li>
-      <li class="nav-item">
-        Réparation / Entretien
-      </li>
+  <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-        Pièces détachées
-      </li>
+           <%= link_to "Home", root_path %>
+        </li>
         <li class="nav-item">
-       <%= link_to "Contact", contact_path %>
-      </li>
+          <%= link_to "Réparation / Entretien", "/" %>
+        </li>
+          <li class="nav-item">
+           <%= link_to "Pièces détachées", "/" %>
+        </li>
+          <li class="nav-item">
+         <%= link_to "Contact", contact_path %>
+        </li>
 
-    </ul>
+      </ul>
+    </div>
   </div>
 </div>
 

@@ -1,17 +1,13 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: transparent;
-}
-
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar-lewagon:hover {
-    background: green;
+    background: $blue;
     opacity: 1;
     transition: 0.5s;
 }
+
 .navbar-lewagon {
     justify-content: space-between;
     background: transparent;
@@ -23,10 +19,10 @@
 }
 
 .nav-item a{
-  color: red !important;
+  color: white !important;
   text-decoration:none;
-}
+  padding: 55px;
+  font-weight: bold;
+  font-size: 20px;
 
-.navbar-brand {
-  color: yellow !important;
 }
