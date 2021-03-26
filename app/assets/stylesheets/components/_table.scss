@@ -1,6 +1,9 @@
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  margin-bottom: 55px;
+  border-color: $blue;
+   color: $blue;
 }
 
 th, td {
