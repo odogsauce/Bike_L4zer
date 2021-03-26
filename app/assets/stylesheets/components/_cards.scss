@@ -1,0 +1,32 @@
+.card > img {
+  height: 200px;
+  width: 100%;
+  // object-fit: cover;
+}
+
+.card {
+  border-radius: 10px;
+  margin: 55px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.card > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 12px;
+  opacity: .7;
+}

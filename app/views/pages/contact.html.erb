@@ -1,28 +1,47 @@
-contact
+  <div class="container">
+    <h2><i class="fas fa-globe"></i> CONTACT</h2>
+    <p>
+      Que ce soit pour prendre rendez-vous ou pour toute autre question, n'hésitez surtout pas à nous contacter par
+      téléphone ou par mail, BIKE L4ZER s'efforcera de vous répondre dans les meilleurs délais.
+      07 31 57 96 97 - bl4@bikelazer.fr
+    </p>
+  <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+    <div id="map"
+         data-markers="<%= @markers.to_json %>"
+         data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
 
-<div id="map"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-</div>
+    <div class="card">
+      <h4>35 rue renière</h4>
+      <h4>33000 Bordeaux</h4>
 
-<div>
-35 rue reniere
-33000 Bordeaux
-France
 
-phone  07 31 57 96 97
+      <ul><strong>Lundi   Fermé</strong></ul>
+      <ul>Mardi   9:30 - 17:30</ul>
+      <ul>Mercredi    9:30 - 17:30</ul>
+      <ul>Jeudi   9:30 - 17:30</ul>
+      <ul>Vendredi    9:30 - 17:30</ul>
+      <ul>Samedi    9:30 - 17:30</ul>
+      <ul><strong>Dimanche    Fermé</strong></ul>
 
-email bl4@bikelazer.fr
+    </div>
+  </div>
 
-Lundi   Fermé
-Mardi   9:30 - 17:30
-Mercredi    9:30 - 17:30
-Jeudi   9:30 - 17:30
-Vendredi    9:30 - 17:30
-Samedi    9:30 - 17:30
-Dimanche    Fermé
-</div>
+      <form>
 
-<div class="contact-form">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+     <label for="email">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your email..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <a class="btn btn-primary" href="#">Submit</a>
+  </form>
 
 </div>
