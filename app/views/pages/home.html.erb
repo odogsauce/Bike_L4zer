@@ -2,14 +2,14 @@
   <div class="container">
     <h1>BIKE <i class="fas fa-biking"></i> L4ZER</h1>
     <h3>Bienvenue à L'atelier de réparation au service de votre vélo !</h3>
-    <a class="btn btn-primary" href="#">En savoir plus</a>
+    <a class="btn btn-primary" href="#section2">En savoir plus</a>
   </div>
 </div>
 
 
 
 
-<div class="container">
+<div class="container" id="section2">
   <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
     <div class="card">
       <h1> <i class="fas fa-tools"></i> Réparation / Entretien</h1>
@@ -37,7 +37,33 @@
 </div>
 
 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 
 
 
