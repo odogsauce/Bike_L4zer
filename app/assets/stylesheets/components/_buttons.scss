@@ -33,3 +33,18 @@
 .fa-chevron-up:hover {
   background-color: black; /* Add a dark-grey background on hover */
 }
+
+.btn-warning {
+  padding: 8px 24px !important;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-warning:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  border: 1px solid #0F60C4;
+  color: white;
+}
+
+

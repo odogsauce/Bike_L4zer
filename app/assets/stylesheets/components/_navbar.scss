@@ -2,15 +2,9 @@
   flex-grow: 0;
 }
 
-.navbar-lewagon:hover {
-    background: $blue;
-    opacity: 1;
-    transition: 0.5s;
-}
-
 .navbar-lewagon {
     justify-content: space-between;
-    background: transparent;
+    background: $blue;
     position: fixed;
     top: 0;
     right: 0;
